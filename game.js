@@ -249,6 +249,8 @@ let drawInterval;
         overDisplay()
     }
     function backToHome() {
+        player.allDefault()
+        bot.allDefault()
         splashDisplay()
     }
 // E:Score and over function
