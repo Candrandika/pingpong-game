@@ -245,6 +245,8 @@ let drawInterval;
         score.innerText = player.score+' : '+bot.score
         gameStop()
         overDisplay()
+        player.allDefault()
+        bot.allDefault()
     }
     function backToHome() {
         splashDisplay()
