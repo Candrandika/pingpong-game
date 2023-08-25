@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PingPong Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <form onsubmit="event.preventDefault(); playGame()" action="" id="splash">
+            <h1 id="game-title">PingPong Game</h1>
+            <div class="form-group">
+                <input type="text" name="p1" id="p1" class="input-player" placeholder="Input player's name" required>
+                <input type="text" name="p2" id="p2" class="input-player" placeholder="Input player's name" required>
+            </div>
+            <button type="submit" id="play-button">Mulai!</button>
+        </form>
+        <canvas id="game"></canvas>
+        <div id="over">
+            <h1 id="game-title">GameSelesai!</h1>
+            <div class="winner-area">
+                <div id="winner-text"><span id="winner">name</span> menang!!!</div>
+                <div id="score">0 : 0</div>
+            </div>
+            <button type="button" id="home-button">Kembali!</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
