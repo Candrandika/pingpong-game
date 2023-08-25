@@ -243,10 +243,10 @@ let drawInterval;
     function gameOver(winner_name) {
         winner.innerText = winner_name
         score.innerText = player.score+' : '+bot.score
-        gameStop()
-        overDisplay()
         player.allDefault()
         bot.allDefault()
+        gameStop()
+        overDisplay()
     }
     function backToHome() {
         splashDisplay()
